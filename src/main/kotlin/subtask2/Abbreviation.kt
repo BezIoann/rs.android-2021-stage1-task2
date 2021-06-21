@@ -3,8 +3,8 @@ package subtask2
 class Abbreviation {
     fun abbreviationFromA(a: String, b: String): String {
         // приведем строки к спискам
-        val firstList = a.toLowerCase().toList()
-        val secondList = b.toLowerCase().toList()
+        val firstList = a.toUpperCase().toList()
+        val secondList = b.toList()
         // с помощью intersect найдем пересечение двух списков и
         // если пересечение есть и равно secondlist,
         // то всё верно и возвращаем YES иначе NO
