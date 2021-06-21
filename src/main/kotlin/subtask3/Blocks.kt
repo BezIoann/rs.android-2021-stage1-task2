@@ -21,7 +21,7 @@ class Blocks {
             // взависимости от класса blockB, работаем с массивом согласно условию
             String::class -> {
                 //конкатенация строк
-                return blockA.filterIsInstance<String>().joinToString()
+                return blockA.filterIsInstance<String>().joinToString(separator = "")
             }
             Int::class -> {
                 //сумма чисел
